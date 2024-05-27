@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './components/Header/Header';
-import NavBar from './components/NavBar';
 import Home from './pages/Home';
 
 const API_KEY = '0WB7WUUAZ62C2JXZ';
 const BASE_URL = 'https://www.alphavantage.co/query';
 
-export const fetchMarketData = async (symbol = 'SPY') => {
+const fetchMarketData = async (symbol = 'SPY') => {
   try {
     const response = await axios.get(BASE_URL, {
       params: {
@@ -16,7 +15,7 @@ export const fetchMarketData = async (symbol = 'SPY') => {
         apikey: API_KEY,
       },
     });
-    console.log(response.data);
+    console.log(response.data); // Add this line
     return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -31,7 +30,7 @@ function App() {
     const fetchData = async () => {
       try {
         const data = await fetchMarketData();
-        processMarketData(data);
+        processMarketData(data); // Process and set the market data
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -53,8 +52,10 @@ function App() {
     })).reverse();
 
     setMarketData({
-      headline: "Today's Market",
-      sentiment: "The markets are bullish",
+      headline: "Today's Market Summary",
+      sentiment: "Bullish",
+      marketValue: 15000,
+      change: 1.2, // Positive value for Bullish, negative for Bearish
       sectors: [
         { name: 'Industrials', change: 1.5 },
         { name: 'Technology', change: 2.3 },
@@ -73,7 +74,7 @@ function App() {
       ],
       chart: {
         '1D': chartData,
-        '1W': chartData,
+        '1W': chartData, // Simplified for example; you need to process accordingly
         '1M': chartData,
         '3M': chartData,
         '1Y': chartData,
@@ -86,9 +87,7 @@ function App() {
     <div className="app flex flex-col items-center">
       <Header />
       <div className="main-content flex w-full max-w-7xl my-6">
-        <div className="w-1/6">
-          <NavBar />
-        </div>
+
         <div className="w-5/6">
           <Home marketData={marketData} />
         </div>
