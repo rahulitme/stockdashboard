@@ -13,7 +13,8 @@ A React.js stock market dashboard that fetches real-time data and displays it in
 
 ## Screenshot
 
-![Stock Market Dashboard](./screenshot.png)
+![Stock Market Dashboard](https://github.com/rahulitme/stockdashboard/assets/118755562/1a071565-ba50-44ba-ab3c-7df0716d886e)
+)
 
 ## Technologies Used
 
