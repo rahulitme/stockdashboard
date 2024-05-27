@@ -28,3 +28,6 @@ A React.js stock market dashboard that fetches real-time data and displays it in
    ```bash
    git clone https://github.com/yourusername/stock-market-dashboard.git
    cd stock-market-dashboard
+
+   After clone run
+   **npm run dev**
