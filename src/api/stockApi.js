@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '0WB7WUUAZ62C2JXZ';
+const API_KEY = 'YZ6LW5XAX2UAD5L1';
 const BASE_URL = 'https://www.alphavantage.co/query';
 
 export const fetchMarketData = async (symbol = 'SPY') => {

@@ -3,7 +3,7 @@ import axios from 'axios';
 import Header from './components/Header/Header';
 import Home from './pages/Home';
 
-const API_KEY = '0WB7WUUAZ62C2JXZ';
+const API_KEY = 'YZ6LW5XAX2UAD5L1';
 const BASE_URL = 'https://www.alphavantage.co/query';
 
 const fetchMarketData = async (symbol = 'SPY') => {
