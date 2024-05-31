@@ -1,8 +1,34 @@
-# React + Vite
+# Stock Market Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React.js stock market dashboard that fetches real-time data and displays it in an intuitive and user-friendly manner. This application demonstrates the use of APIs, state management with React hooks, and a clean, responsive UI design using Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Personalized greeting with the current date.
+- Navigation bar with icons for Home, Search, and Profile.
+- Market summary with a headline and sentiment indicator.
+- Sector performance with percentage change.
+- Overview of key market indices and additional assets.
+- Interactive chart with selectable time ranges.
+
+## Screenshot
+
+![Stock Market Dashboard](https://github.com/rahulitme/stockdashboard/assets/118755562/1a071565-ba50-44ba-ab3c-7df0716d886e)
+)
+
+## Technologies Used
+
+- React.js
+- Tailwind CSS
+- Recharts
+- Alpha Vantage API
+
+## Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/stock-market-dashboard.git
+   cd stock-market-dashboard
+
+   After clone run
+   **npm run dev**
